@@ -30,6 +30,8 @@ String *new_String() {
     string->length = 0;
     string->value = calloc(string->capacity, sizeof(char));
 
+    string->appendCharacter = appendCharacter;
+
     return string;
 }
 
